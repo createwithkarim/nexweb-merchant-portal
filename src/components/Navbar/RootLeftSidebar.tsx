@@ -8,6 +8,7 @@ import {
   SidebarContent,
   SidebarFooter,
   SidebarGroup,
+  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
@@ -23,6 +24,7 @@ import { IconKey, Icons } from "../Icons/Icons";
 import Logo from "../Shared/Logo";
 
 const RootLeftSidebar = async ({ items }: any) => {
+  const user = true;
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
@@ -34,7 +36,8 @@ const RootLeftSidebar = async ({ items }: any) => {
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarMenu>
+          <SidebarGroupLabel>Platform</SidebarGroupLabel>
+          <SidebarMenu defaultChecked={true}>
             {items.navMain.map((item: any) => {
               const Icon = item.icon
                 ? Icons[item.icon as IconKey]
@@ -76,7 +79,7 @@ const RootLeftSidebar = async ({ items }: any) => {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter>
-        {/* {user?.data && user?.data?.role === "USER" && (
+        {user?.data && user?.data?.role === "USER" && (
           <Link href="/collection" className="hover:bg-accent rounded-md">
             <SidebarMenuButton
               tooltip="My Collections"
@@ -89,7 +92,7 @@ const RootLeftSidebar = async ({ items }: any) => {
               <Icons.arrowRight />
             </SidebarMenuButton>
           </Link>
-        )} */}
+        )}
 
         {/* <SidebarMenu>
           {user?.data ? (

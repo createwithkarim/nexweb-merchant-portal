@@ -15,8 +15,8 @@ import "./globals.css";
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lazba Seller Center",
-  description: "Sell your products on Lazba",
+  title: "Nexweb Merchant Portal",
+  description: "Sell your products on Nexweb",
 };
 
 export default function RootLayout({

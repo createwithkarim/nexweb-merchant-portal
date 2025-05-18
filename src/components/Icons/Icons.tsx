@@ -1,14 +1,16 @@
 import {
+  BookmarkCheck,
+  ChartLine,
   ChevronLeft,
   ChevronRight,
   Compass,
+  CreditCard,
   Home,
   Laptop,
   LayoutPanelLeft,
   Moon,
   Package2,
   PackageCheck,
-  ShoppingBagIcon,
   Star,
   Sun,
   Tag,
@@ -16,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const Icons = {
-  logo: ShoppingBagIcon,
+  logo: BookmarkCheck,
   package: Package2,
   product: PackageCheck,
   star: Star,
@@ -30,6 +32,8 @@ export const Icons = {
   tag: Tag,
   home: Home,
   layout: LayoutPanelLeft,
+  CreditCard: CreditCard,
+  Chart: ChartLine,
 };
 
 export type IconKey = keyof typeof Icons;
