@@ -79,21 +79,6 @@ const RootLeftSidebar = async ({ items }: any) => {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter>
-        {user?.data && user?.data?.role === "USER" && (
-          <Link href="/collection" className="hover:bg-accent rounded-md">
-            <SidebarMenuButton
-              tooltip="My Collections"
-              className="flex justify-between items-center"
-            >
-              <span className="flex items-center gap-2">
-                <Icons.star className="h-4 w-4" />
-                <span>Collections</span>
-              </span>
-              <Icons.arrowRight />
-            </SidebarMenuButton>
-          </Link>
-        )}
-
         {/* <SidebarMenu>
           {user?.data ? (
             <SidebarMenuItem>
