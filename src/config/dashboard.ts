@@ -8,19 +8,19 @@ export const dashboardNavItems = {
       items: [
         {
           title: "Orders",
-          url: "#",
+          url: "/store/orders",
         },
         {
           title: "Products",
-          url: "#",
+          url: "/store/products",
         },
         {
           title: "Categories",
-          url: "#",
+          url: "/store/categories",
         },
         {
           title: "Customers",
-          url: "#",
+          url: "/store/customers",
         },
       ],
     },
@@ -32,23 +32,23 @@ export const dashboardNavItems = {
       items: [
         {
           title: "Manage Shop",
-          url: "#",
+          url: "/settings/manage-shop",
         },
         {
           title: "Customize theme",
-          url: "#",
+          url: "/settings/customize-theme",
         },
         {
           title: "Landing pages",
-          url: "#",
+          url: "/settings/landing-pages",
         },
         {
-          title: "Promo Codes",
-          url: "#",
+          title: "Promo codes",
+          url: "/settings/promo-codes",
         },
         {
-          title: "Users & Permissions",
-          url: "#",
+          title: "Users & permissions",
+          url: "/settings/permission",
         },
       ],
     },
@@ -60,7 +60,7 @@ export const dashboardNavItems = {
       items: [
         {
           title: "Analytics",
-          url: "#",
+          url: "/reports/analytics",
         },
       ],
     },
@@ -72,11 +72,11 @@ export const dashboardNavItems = {
       items: [
         {
           title: "Billing",
-          url: "#",
+          url: "/payments/billing",
         },
         {
           title: "Subscriptions",
-          url: "#",
+          url: "/payments/subscriptions",
         },
       ],
     },
