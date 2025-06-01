@@ -45,7 +45,7 @@ export default function RootLayout({
                     </div>
 
                     <div className="grid flex-1 text-left text-sm leading-tight">
-                      <span className="font-bold text-base">Lazba</span>
+                      <span className="font-bold text-base">Nexweb</span>
                     </div>
                   </Link>
                 </div>
